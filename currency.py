@@ -11,4 +11,4 @@ cTo = args.t
 cAmount = float(args.a)
 currency = convert(cFrom, cTo, cAmount)
 currencyConvert = json.loads(currency)
-print("Converted: " + str(cAmount) + " " + cFrom + " To: " + currencyConvert['amount'] + " " + cTo)
+print("Converted: " + str(cAmount) + " " + str(cFrom) + " To: " + str(currencyConvert['amount']) + " " + str(cTo))

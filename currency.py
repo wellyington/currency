@@ -5,7 +5,13 @@ try:
 except:
     upgrade_pip = lambda: os.system("pip3 install --upgrade pip")
     install_google = lambda: os.system("pip3 install google_currency")
-    
+    print("Upgrading Pip")
+    print("----------------------------------------------------------")
+    upgrade_pip()
+    print("Downloading Google Currency")
+    print("----------------------------------------------------------")
+    install_google()
+
 import argparse
 import json
 currency_parser = argparse.ArgumentParser()

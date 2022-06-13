@@ -1,4 +1,11 @@
-from google_currency import convert
+import os
+
+try:
+	from google_currency import convert
+except:
+    upgrade_pip = lambda: os.system("pip3 install --upgrade pip")
+    install_google = lambda: os.system("pip3 install google_currency")
+    
 import argparse
 import json
 currency_parser = argparse.ArgumentParser()
